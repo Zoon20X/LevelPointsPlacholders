@@ -29,8 +29,6 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         // Make sure "SomePlugin" is on the server
         if (!canRegister()) {
             return false;
-        }else{
-            Bukkit.getConsoleSender().sendMessage("test");
         }
 
         plugin = (LP) Bukkit.getPluginManager().getPlugin("LP");
