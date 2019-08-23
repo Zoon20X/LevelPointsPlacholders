@@ -1,0 +1,6 @@
+name: LevelPP
+version: 1.0-SNAPSHOT
+main: levelpointsplaceholders.levelpp.LPExpansions
+api-version: 1.13
+authors: [Zoon20X]
+description: This is for LevelPoints
