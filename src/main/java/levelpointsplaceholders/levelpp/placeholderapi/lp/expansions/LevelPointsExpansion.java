@@ -71,10 +71,11 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
         int playerlevel = plugin.getPlayersConfig().getInt(player.getName() + ".level");
         int expamount = plugin.getPlayersConfig().getInt(player.getName() + ".EXP.Amount");
+        int LEXP = plugin.LevelConfig.getInt("LevelingEXP");
         if (plugin.LevelConfig.getBoolean("CustomLeveling")) {
-            needep = plugin.LevelConfig.getInt("Level-" + nlevel);
+            needep = plugin.LevelConfig.getInt("Level-" + playerlevel);
         } else {
-            needep = nlevel * LEXP;
+            needep = playerlevel * LEXP;
         }
         float percentage = expamount * 100;
         prestige = plugin.getPlayersConfig().getInt(player.getName() + ".Prestige");

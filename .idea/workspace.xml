@@ -7,8 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +99,17 @@
       <updated>1566537835175</updated>
       <workItem from="1566537839677" duration="3340000" />
       <workItem from="1566542794145" duration="829000" />
+      <workItem from="1566545224278" duration="2177000" />
+      <workItem from="1566689113930" duration="729000" />
     </task>
+    <task id="LOCAL-00001" summary="got rid of a debug message">
+      <created>1566545287212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566545287212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +127,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="got rid of a debug message" />
+    <option name="LAST_COMMIT_MESSAGE" value="got rid of a debug message" />
   </component>
 </project>

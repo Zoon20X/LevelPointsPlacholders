@@ -1,5 +1,5 @@
 name: LevelPP
-version: ${project.version}
+version: 0.0.2
 main: levelpointsplaceholders.levelpp.LPExpansions
 api-version: 1.13
 authors: [Zoon20X]
