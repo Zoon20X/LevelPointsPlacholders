@@ -63,7 +63,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "1.0.0";
+        return "0.0.2";
     }
 
     @Override
