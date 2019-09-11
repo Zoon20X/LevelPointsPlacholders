@@ -4,6 +4,7 @@ package levelpointsplaceholders.levelpp.placeholderapi.lp.expansions;
 import levelpoints.lp.LP;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class LevelPointsExpansion extends PlaceholderExpansion {
@@ -84,6 +85,19 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         int prestigelevel = plugin.getPlayersConfig().getInt(player.getName() + ".Prestige");
 
         String playerLevels = Integer.toString(playerlevel);
+
+        double required_progress = needep;
+        double current_progress = expamount;
+        double progress_percentage = current_progress / required_progress;
+        StringBuilder sb = new StringBuilder();
+        int bar_length = 20;
+        for (int i = 0; i < bar_length; i++) {
+            if (i < bar_length * progress_percentage) {
+                sb.append(ChatColor.GREEN + "" + ChatColor.BOLD + "|"); //what to append if percentage is covered (e.g. GREEN '|'s)
+            } else {
+                sb.append(ChatColor.GRAY + "" + ChatColor.BOLD + "|"); //what to append if percentage is not covered (e.g. GRAY '|'s)
+            }
+        }
         if (identifier.equals("player_level")) {
             return String.valueOf(playerLevels);
         }
@@ -92,6 +106,9 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         }
         if (identifier.equals("exp_required")) {
             return String.valueOf(needep);
+        }
+        if (identifier.equals("progress_bar")) {
+            return sb.toString();
         }
         if (identifier.equals("exp_progress")) {
             return String.valueOf(Math.round(expamount / needep));
