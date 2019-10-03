@@ -73,6 +73,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         int playerlevel = plugin.getPlayersConfig().getInt(player.getName() + ".level");
         int expamount = plugin.getPlayersConfig().getInt(player.getName() + ".EXP.Amount");
         int LEXP = plugin.LevelConfig.getInt("LevelingEXP");
+        int Booster = plugin.playersConfig.getInt(player.getName() + ".EXP.Active");
         if (plugin.LevelConfig.getBoolean("CustomLeveling")) {
             needep = plugin.LevelConfig.getInt("Level-" + playerlevel);
         } else {
@@ -113,6 +114,10 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         if (identifier.equals("exp_progress")) {
             return String.valueOf(Math.round(expamount / needep));
         }
+        if (identifier.equals("booster_active")) {
+            return String.valueOf(Booster);
+        }
+
         if (player == null) {
             return "";
         }

@@ -9,9 +9,6 @@
     <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +116,8 @@
       <workItem from="1566692963493" duration="2258000" />
       <workItem from="1567066804790" duration="80000" />
       <workItem from="1567199319685" duration="897000" />
-      <workItem from="1568196784756" duration="278000" />
+      <workItem from="1568196784756" duration="1643000" />
+      <workItem from="1570097485031" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="got rid of a debug message">
       <created>1566545287212</created>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567199631020</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a new placeholder, and got rid of plugin.yml">
+      <created>1568197090697</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568197090697</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +170,7 @@
     <MESSAGE value="got rid of a debug message" />
     <MESSAGE value="fixed a issue with some placeholders" />
     <MESSAGE value="Got rid of not needed .class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got rid of not needed .class" />
+    <MESSAGE value="Added a new placeholder, and got rid of plugin.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a new placeholder, and got rid of plugin.yml" />
   </component>
 </project>
