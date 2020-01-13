@@ -5,7 +5,11 @@ import levelpoints.lp.LP;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+
+import java.io.File;
 
 public class LevelPointsExpansion extends PlaceholderExpansion {
 
@@ -64,26 +68,27 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "0.0.2";
+        return "0.0.3";
     }
 
     @Override
     public String onPlaceholderRequest(Player player, String identifier) {
-
-        int playerlevel = plugin.getPlayersConfig().getInt(player.getName() + ".level");
-        int expamount = plugin.getPlayersConfig().getInt(player.getName() + ".EXP.Amount");
-        int LEXP = plugin.LevelConfig.getInt("LevelingEXP");
-        int Booster = plugin.playersConfig.getInt(player.getName() + ".EXP.Active");
+        File userdata = new File(plugin.userFolder, player.getUniqueId() + ".yml");
+        FileConfiguration UsersConfig = YamlConfiguration.loadConfiguration(userdata);
+        int playerlevel = UsersConfig.getInt(player.getName() + ".level");
+        int expamount = UsersConfig.getInt(player.getName() + ".EXP.Amount");
+        int LEXP = UsersConfig.getInt("LevelingEXP");
+        int Booster = UsersConfig.getInt(player.getName() + ".EXP.Active");
         if (plugin.LevelConfig.getBoolean("CustomLeveling")) {
             needep = plugin.LevelConfig.getInt("Level-" + playerlevel);
         } else {
             needep = playerlevel * LEXP;
         }
         float percentage = expamount * 100;
-        prestige = plugin.getPlayersConfig().getInt(player.getName() + ".Prestige");
+        prestige = UsersConfig.getInt(player.getName() + ".Prestige");
 
 
-        int prestigelevel = plugin.getPlayersConfig().getInt(player.getName() + ".Prestige");
+        int prestigelevel = UsersConfig.getInt(player.getName() + ".Prestige");
 
         String playerLevels = Integer.toString(playerlevel);
 

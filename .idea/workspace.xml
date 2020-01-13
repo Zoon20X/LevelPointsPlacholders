@@ -7,10 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_14_4_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelPointsPlacholders.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LevelPointsPlacholders.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/LevelPoints.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/LevelPoints.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/LevelPointsPlacholders.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,26 +55,20 @@
   </component>
   <component name="ProjectId" id="1PoQBlFD0QEBhLnOG2YsqD0eET8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="LevelPointsPlacholders build" type="MavenRunConfiguration" factoryName="Maven">
@@ -99,6 +98,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -117,7 +128,13 @@
       <workItem from="1567066804790" duration="80000" />
       <workItem from="1567199319685" duration="897000" />
       <workItem from="1568196784756" duration="1643000" />
-      <workItem from="1570097485031" duration="954000" />
+      <workItem from="1570097485031" duration="1580000" />
+      <workItem from="1576047919578" duration="806000" />
+      <workItem from="1576109831536" duration="21000" />
+      <workItem from="1576112662552" duration="638000" />
+      <workItem from="1578320589444" duration="930000" />
+      <workItem from="1578381908564" duration="488000" />
+      <workItem from="1578382565028" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="got rid of a debug message">
       <created>1566545287212</created>
@@ -147,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568197090697</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added a new placeholder, and got rid of plugin.yml">
+      <created>1570098943042</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570098943042</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,5 +196,16 @@
     <MESSAGE value="Got rid of not needed .class" />
     <MESSAGE value="Added a new placeholder, and got rid of plugin.yml" />
     <option name="LAST_COMMIT_MESSAGE" value="Added a new placeholder, and got rid of plugin.yml" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="545" y="254" key="FileChooserDialogImpl" timestamp="1578382769296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1375" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576109852460" />
+    <state x="545" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1578382769296" />
+    <state x="417" y="75" key="SettingsEditor" timestamp="1578320694277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="417" y="75" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1578320694277" />
   </component>
 </project>
