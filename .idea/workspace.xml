@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_14_4_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelPointsPlacholders.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LevelPointsPlacholders.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/LevelPoints.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/LevelPoints.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/LevelPointsPlacholders.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +62,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -171,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570098943042</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made to only work with the new version of levelpoints 1.1.9.8">
+      <created>1578881940360</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578881940360</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,17 +198,34 @@
     <MESSAGE value="fixed a issue with some placeholders" />
     <MESSAGE value="Got rid of not needed .class" />
     <MESSAGE value="Added a new placeholder, and got rid of plugin.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a new placeholder, and got rid of plugin.yml" />
+    <MESSAGE value="Made to only work with the new version of levelpoints 1.1.9.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made to only work with the new version of levelpoints 1.1.9.8" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="545" y="254" key="FileChooserDialogImpl" timestamp="1578382769296">
+    <state x="-1368" y="179" key="#Project_Structure" timestamp="1580591116765">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="179" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580591116765" />
+    <state x="-1356" y="115" key="CommitChangelistDialog2" timestamp="1578881937905">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1356" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578881937905" />
+    <state x="545" y="254" key="FileChooserDialogImpl" timestamp="1580097908489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1375" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1576109852460" />
-    <state x="545" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1578382769296" />
+    <state x="545" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1580097908489" />
     <state x="417" y="75" key="SettingsEditor" timestamp="1578320694277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="417" y="75" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1578320694277" />
+    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578881942337">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1578881942337" />
+    <state x="342" y="191" key="new project wizard" timestamp="1579237028227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="191" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1579237028227" />
   </component>
 </project>

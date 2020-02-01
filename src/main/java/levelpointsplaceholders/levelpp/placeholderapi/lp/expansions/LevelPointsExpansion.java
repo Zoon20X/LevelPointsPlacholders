@@ -68,7 +68,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "0.0.3";
+        return "0.0.6";
     }
 
     @Override
@@ -78,7 +78,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         int playerlevel = UsersConfig.getInt(player.getName() + ".level");
         int expamount = UsersConfig.getInt(player.getName() + ".EXP.Amount");
         int LEXP = UsersConfig.getInt("LevelingEXP");
-        int Booster = UsersConfig.getInt(player.getName() + ".EXP.Active");
+        int Booster = plugin.LevelConfig.getInt(player.getName() + ".EXP.Active");
         if (plugin.LevelConfig.getBoolean("CustomLeveling")) {
             needep = plugin.LevelConfig.getInt("Level-" + playerlevel);
         } else {
