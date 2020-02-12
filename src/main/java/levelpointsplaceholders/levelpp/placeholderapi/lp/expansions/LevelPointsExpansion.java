@@ -1,7 +1,8 @@
 package levelpointsplaceholders.levelpp.placeholderapi.lp.expansions;
 
 
-import levelpoints.lp.LP;
+import levelpoints.levelpoints.LevelPoints;
+
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -14,18 +15,12 @@ import java.io.File;
 public class LevelPointsExpansion extends PlaceholderExpansion {
 
 
-    private int exps;
-    private int take;
-    private int leftover;
-    private int nlevel;
-    public int needep;
-    public int LEXP;
     public int prestige;
-    private LP plugin;
+    private LevelPoints plugin;
 
     @Override
     public boolean canRegister() {
-        return Bukkit.getPluginManager().getPlugin("LP") != null;
+        return Bukkit.getPluginManager().getPlugin("LevelPoints") != null;
     }
 
     @Override
@@ -36,7 +31,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
             return false;
         }
 
-        plugin = (LP) Bukkit.getPluginManager().getPlugin("LP");
+        plugin = (LevelPoints) Bukkit.getPluginManager().getPlugin("LevelPoints");
 
         if (plugin == null) {
             return false;
@@ -75,17 +70,12 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
     public String onPlaceholderRequest(Player player, String identifier) {
         File userdata = new File(plugin.userFolder, player.getUniqueId() + ".yml");
         FileConfiguration UsersConfig = YamlConfiguration.loadConfiguration(userdata);
-        int playerlevel = UsersConfig.getInt(player.getName() + ".level");
-        int expamount = UsersConfig.getInt(player.getName() + ".EXP.Amount");
-        int LEXP = UsersConfig.getInt("LevelingEXP");
-        int Booster = plugin.LevelConfig.getInt(player.getName() + ".EXP.Active");
-        if (plugin.LevelConfig.getBoolean("CustomLeveling")) {
-            needep = plugin.LevelConfig.getInt("Level-" + playerlevel);
-        } else {
-            needep = playerlevel * LEXP;
-        }
+        int playerlevel = plugin.uc.getCurrentLevel(player);
+        int expamount = plugin.uc.getCurrentEXP(player);
+        int needep = plugin.uc.getRequiredEXP(player);
+        int Booster = UsersConfig.getInt("ActiveBooster");
         float percentage = expamount * 100;
-        prestige = UsersConfig.getInt(player.getName() + ".Prestige");
+        prestige = UsersConfig.getInt(player.getName() + "Prestige");
 
 
         int prestigelevel = UsersConfig.getInt(player.getName() + ".Prestige");
