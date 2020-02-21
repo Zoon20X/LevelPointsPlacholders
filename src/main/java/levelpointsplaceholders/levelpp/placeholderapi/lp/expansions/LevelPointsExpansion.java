@@ -63,7 +63,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "0.0.7";
+        return "0.0.9";
     }
 
     @Override
@@ -75,10 +75,10 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         int needep = plugin.uc.getRequiredEXP(player);
         int Booster = UsersConfig.getInt("ActiveBooster");
         float percentage = expamount * 100;
-        prestige = UsersConfig.getInt(player.getName() + "Prestige");
+        prestige = UsersConfig.getInt("Prestige");
 
 
-        int prestigelevel = UsersConfig.getInt(player.getName() + ".Prestige");
+        int prestigelevel = UsersConfig.getInt("Prestige");
 
         String playerLevels = Integer.toString(playerlevel);
 
@@ -107,7 +107,8 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
             return sb.toString();
         }
         if (identifier.equals("exp_progress")) {
-            return String.valueOf(Math.round(expamount / needep));
+
+            return String.valueOf(Math.round(percentage / needep));
         }
         if (identifier.equals("booster_active")) {
             return String.valueOf(Booster);

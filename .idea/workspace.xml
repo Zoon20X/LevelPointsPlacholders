@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="" />
+    <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,8 +60,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../API/LevelPointsAPI" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -188,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581507415786</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="0.0.7">
+      <created>1581507685844</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581507685844</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,36 +226,38 @@
     <MESSAGE value="Made to only work with the new version of levelpoints 1.1.9.8" />
     <MESSAGE value="fixed up required exp placeholder" />
     <MESSAGE value="updated for 1.2.0.0 update of levelpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated for 1.2.0.0 update of levelpoints" />
+    <MESSAGE value="0.0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.7" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1368" y="179" key="#Project_Structure" timestamp="1580591116765">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="552" y="179" key="#Project_Structure" timestamp="1581507897363">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="179" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580591116765" />
+    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581507897363" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581377202998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581377202998" />
-    <state x="564" y="115" key="CommitChangelistDialog2" timestamp="1581507413740">
+    <state x="564" y="115" key="CommitChangelistDialog2" timestamp="1581507684531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1356" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580591149115" />
-    <state x="564" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581507413740" />
+    <state x="564" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581507684531" />
     <state x="545" y="254" key="FileChooserDialogImpl" timestamp="1581507425965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1375" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580592993175" />
     <state x="545" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581507425965" />
-    <state x="417" y="75" key="SettingsEditor" timestamp="1581375993814">
+    <state x="417" y="75" key="SettingsEditor" timestamp="1582235050374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="417" y="75" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581375993814" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1581507418115">
+    <state x="417" y="75" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582235050373" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1581507687074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580591155009" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581507418115" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581507687074" />
     <state x="342" y="191" key="new project wizard" timestamp="1579237028227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
