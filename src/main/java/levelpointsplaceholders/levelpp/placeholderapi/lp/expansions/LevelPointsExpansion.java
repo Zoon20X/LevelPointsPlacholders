@@ -3,6 +3,7 @@ package levelpointsplaceholders.levelpp.placeholderapi.lp.expansions;
 
 import levelpoints.levelpoints.LevelPoints;
 
+import levelpoints.utils.utils.API;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -63,7 +64,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "0.0.9";
+        return "0.1.0";
     }
 
     @Override
@@ -86,12 +87,15 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         double current_progress = expamount;
         double progress_percentage = current_progress / required_progress;
         StringBuilder sb = new StringBuilder();
+
         int bar_length = 20;
+        String completed = API.format(plugin.uc.getLangConfig().getString("lpBarDesignCompleted"));
+        String need = API.format(plugin.uc.getLangConfig().getString("lpBarDesignRequired"));
         for (int i = 0; i < bar_length; i++) {
             if (i < bar_length * progress_percentage) {
-                sb.append(ChatColor.GREEN + "" + ChatColor.BOLD + "|"); //what to append if percentage is covered (e.g. GREEN '|'s)
+                sb.append(completed);
             } else {
-                sb.append(ChatColor.GRAY + "" + ChatColor.BOLD + "|"); //what to append if percentage is not covered (e.g. GRAY '|'s)
+                sb.append(need);
             }
         }
         if (identifier.equals("player_level")) {
