@@ -7,10 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/LevelPointsPlacholders_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/LevelPointsPlacholders_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelPointsPlacholders.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LevelPointsPlacholders.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../RecodedPlugins/LevelPoints" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585482976526</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Optimized code">
+      <created>1588149483722</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588149483722</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +244,8 @@
     <MESSAGE value="fixed prestige placeholder" />
     <MESSAGE value="Added custom progressbar" />
     <MESSAGE value="Added Custom Top Placeholders, will require 1.2.0.5 to utilize them effectively" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Custom Top Placeholders, will require 1.2.0.5 to utilize them effectively" />
+    <MESSAGE value="Optimized code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1588146762794">
@@ -250,24 +257,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1581377202998" />
-    <state x="564" y="115" key="CommitChangelistDialog2" timestamp="1585482973061">
+    <state x="564" y="115" key="CommitChangelistDialog2" timestamp="1588149478460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1356" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580591149115" />
-    <state x="564" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585482973061" />
-    <state x="545" y="254" key="FileChooserDialogImpl" timestamp="1585477818129">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="564" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588149478460" />
+    <state x="-1375" y="254" key="FileChooserDialogImpl" timestamp="1588153123130">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1375" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580592993175" />
+    <state x="-1375" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588153123130" />
     <state x="545" y="254" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585477818129" />
     <state x="417" y="75" key="SettingsEditor" timestamp="1582235050374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="417" y="75" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1582235050373" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1585482978069">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1588149497497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1580591155009" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585482978069" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588149497497" />
   </component>
 </project>

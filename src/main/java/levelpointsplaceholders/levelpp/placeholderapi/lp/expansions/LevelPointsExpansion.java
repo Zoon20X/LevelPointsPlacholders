@@ -148,9 +148,9 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
             return sb.toString();
         }
         if (identifier.equals("exp_progress")) {
-            float percentage = plugin.uc.getCurrentEXP(player) * 100;
+            float percentage = plugin.uc.getCurrentEXP(player);
 
-            return String.valueOf(Math.round(percentage / plugin.uc.getRequiredEXP(player)));
+            return String.valueOf(Math.round((percentage / plugin.uc.getRequiredEXP(player)) * 100));
         }
         if (identifier.equals("booster_active")) {
             File userdata = new File(plugin.userFolder, player.getUniqueId() + ".yml");
