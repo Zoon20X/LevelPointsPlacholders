@@ -20,7 +20,6 @@ import java.util.HashMap;
 public class LevelPointsExpansion extends PlaceholderExpansion {
 
     private int posTop = 0;
-    public int prestige;
     private LevelPoints plugin;
 
     @Override
@@ -68,42 +67,14 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "0.1.0";
+        return "0.1.2";
     }
 
     @Override
     public String onPlaceholderRequest(Player player, String identifier) {
-        File userdata = new File(plugin.userFolder, player.getUniqueId() + ".yml");
-        FileConfiguration UsersConfig = YamlConfiguration.loadConfiguration(userdata);
-        int playerlevel = plugin.uc.getCurrentLevel(player);
-        int expamount = plugin.uc.getCurrentEXP(player);
-        int needep = plugin.uc.getRequiredEXP(player);
-        int Booster = UsersConfig.getInt("ActiveBooster");
-        float percentage = expamount * 100;
-        prestige = UsersConfig.getInt("Prestige");
-
-
-        int prestigelevel = UsersConfig.getInt("Prestige");
-
-        String playerLevels = Integer.toString(playerlevel);
-
-        double required_progress = needep;
-        double current_progress = expamount;
-        double progress_percentage = current_progress / required_progress;
-        StringBuilder sb = new StringBuilder();
-
-        int bar_length = 20;
-        String completed = API.format(plugin.uc.getLangConfig().getString("lpBarDesignCompleted"));
-        String need = API.format(plugin.uc.getLangConfig().getString("lpBarDesignRequired"));
-        for (int i = 0; i < bar_length; i++) {
-            if (i < bar_length * progress_percentage) {
-                sb.append(completed);
-            } else {
-                sb.append(need);
-            }
-        }
         if (identifier.equals("player_level")) {
-            return String.valueOf(playerLevels);
+            return String.valueOf(plugin.uc.getCurrentLevel(player));
+
         }
         if(identifier.contains("Top")){
 
@@ -151,35 +122,57 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
         }
         if (identifier.equals("exp_amount")) {
+            int expamount = plugin.uc.getCurrentEXP(player);
             return String.valueOf(expamount);
         }
         if (identifier.equals("exp_required")) {
+            int needep = plugin.uc.getRequiredEXP(player);
             return String.valueOf(needep);
         }
         if (identifier.equals("progress_bar")) {
+            double required_progress = plugin.uc.getRequiredEXP(player);
+            double current_progress = plugin.uc.getCurrentEXP(player);
+            double progress_percentage = current_progress / required_progress;
+            StringBuilder sb = new StringBuilder();
+
+            int bar_length = 20;
+            String completed = API.format(plugin.uc.getLangConfig().getString("lpBarDesignCompleted"));
+            String need = API.format(plugin.uc.getLangConfig().getString("lpBarDesignRequired"));
+            for (int i = 0; i < bar_length; i++) {
+                if (i < bar_length * progress_percentage) {
+                    sb.append(completed);
+                } else {
+                    sb.append(need);
+                }
+            }
             return sb.toString();
         }
         if (identifier.equals("exp_progress")) {
+            float percentage = plugin.uc.getCurrentEXP(player) * 100;
 
-            return String.valueOf(Math.round(percentage / needep));
+            return String.valueOf(Math.round(percentage / plugin.uc.getRequiredEXP(player)));
         }
         if (identifier.equals("booster_active")) {
+            File userdata = new File(plugin.userFolder, player.getUniqueId() + ".yml");
+            FileConfiguration UsersConfig = YamlConfiguration.loadConfiguration(userdata);
+            int Booster = UsersConfig.getInt("ActiveBooster");
             return String.valueOf(Booster);
         }
 
         if (player == null) {
             return "";
         }
+        int prestigelevel = plugin.uc.getCurrentPrestige(player);
         if (!(prestigelevel == 0)) {
             if (identifier.equals("prestige")) {
-                return String.valueOf(prestige);
+                return String.valueOf(prestigelevel);
             }
             if (player == null) {
                 return "";
             }
         } else {
             if (identifier.equals("prestige")) {
-                return "";
+                return String.valueOf(0);
             }
 
         }
