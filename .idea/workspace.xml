@@ -10,15 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hotswap_agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/LevelPoints_1_0_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/LevelPoints.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__me_clip_placeholderapi_2_10_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__me_clip_placeholderapi_2_10_8_DEV_84.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/LevelPoints_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/LevelPoints.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LevelPointsPlacholders.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LevelPointsPlacholders.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" afterDir="false" />
     </list>
@@ -75,8 +69,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../My Servers/VenturesCraft/plugins/LevelPoints-1.0-SNAPSHOT.jar" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../My Servers/VenturesCraft/plugins/LevelPoints.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -238,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588154863530</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated placeholders to work with the new recoded framework">
+      <created>1606001470027</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606001470027</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,20 +271,45 @@
     <MESSAGE value="Added Custom Top Placeholders, will require 1.2.0.5 to utilize them effectively" />
     <MESSAGE value="Optimized code" />
     <MESSAGE value="Fixed percentage placeholder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed percentage placeholder" />
+    <MESSAGE value="Updated placeholders to work with the new recoded framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated placeholders to work with the new recoded framework" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1605590577786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1605590577786" />
-    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1605588845440">
+    <state x="456" y="88" key="CommitChangelistDialog2" timestamp="1606001468363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1605588845440" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1605588847858">
+    <state x="456" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606001468363" />
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1606075062492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1605588847858" />
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606075062492" />
+    <state width="938" height="4" key="GridCell.Tab.0.bottom" timestamp="1606080343636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="4" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
+    <state width="938" height="4" key="GridCell.Tab.0.center" timestamp="1606080343636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="4" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
+    <state width="938" height="4" key="GridCell.Tab.0.left" timestamp="1606080343636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="4" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
+    <state width="938" height="4" key="GridCell.Tab.0.right" timestamp="1606080343636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="4" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1606075064928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606075064928" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606001473370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606001473370" />
   </component>
 </project>

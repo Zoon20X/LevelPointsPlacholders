@@ -25,7 +25,6 @@ import java.util.HashMap;
 public class LevelPointsExpansion extends PlaceholderExpansion {
 
     private int posTop = 0;
-    Plugin plugin = LevelPoints.getPlugin(LevelPoints.class);
 
 
 
@@ -42,7 +41,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         }
 
 
-        if (plugin == null) {
+        if (LevelPoints.getInstance() == null) {
             return false;
         }
 
@@ -72,7 +71,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "0.1.3-devbuild";
+        return "0.1.4 - fix";
     }
 
     @Override
@@ -144,15 +143,30 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
                 double progress_percentage = current_progress / required_progress;
                 StringBuilder sb = new StringBuilder();
 
-                int bar_length = plugin.getConfig().getInt("ActionBarSize");
+                int bar_length = 12;
 
-                String completed = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Complete"));
-                String need = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Required"));
+                String completed;
+                String needed;
+                boolean complete = false;
+                boolean need = false;
                 for (int i = 0; i < bar_length; i++) {
                     if (i < bar_length * progress_percentage) {
+                        if(complete){
+                            completed = ChatColor.stripColor(FileCache.getConfig("langConfig").getString("ProgressBar.Complete"));
+                        }else {
+                            completed = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Complete"));
+                            complete = true;
+                        }
                         sb.append(completed);
                     } else {
-                        sb.append(need);
+
+                        if(need) {
+                             needed = ChatColor.stripColor(API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Required")));
+                        }else{
+                            needed = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Required"));
+                            need = true;
+                        }
+                        sb.append(needed);
                     }
                 }
                 return sb.toString();

@@ -28,6 +28,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: net.md-5:bungeecord-chat:1.13-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.yaml:snakeyaml:1.23" level="project" />
     <orderEntry type="library" name="Maven: me.clip:placeholderapi:2.10.8-DEV-84" level="project" />
-    <orderEntry type="library" name="LevelPoints-1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="LevelPoints" level="project" />
   </component>
 </module>
