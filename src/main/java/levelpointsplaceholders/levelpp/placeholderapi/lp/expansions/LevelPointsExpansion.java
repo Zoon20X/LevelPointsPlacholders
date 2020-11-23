@@ -71,7 +71,7 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 
     @Override
     public String getVersion() {
-        return "0.1.4 - fix";
+        return "0.1.5";
     }
 
     @Override
@@ -79,7 +79,11 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
         if (players instanceof Player) {
             Player player = players.getPlayer();
             if (identifier.equals("player_level")) {
-                return String.valueOf(AsyncEvents.getPlayerContainer(player).getLevel());
+                if(AsyncEvents.isPlayerInCache(player)){
+                    return String.valueOf(AsyncEvents.getPlayerContainer(player).getLevel());
+
+                }
+                return "Loading...";
 
             }
 
