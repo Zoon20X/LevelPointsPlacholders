@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="LevelPointsPlacholders:jar" />
+      <artifact name="Expansion-LevelPoints:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,9 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd7f07d3-9d8d-4087-bd8a-755764c1a152" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/LevelPointsPlacholders_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Expansion_LevelPoints_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelPointsPlacholders.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LevelPointsPlacholders.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/levelpointsplaceholders/levelpp/placeholderapi/lp/expansions/LevelPointsExpansion.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +68,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../My Servers/VenturesCraft/plugins/LevelPoints.jar" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../My Servers/VenturesCraft/plugins/PlaceholderAPI/expansions" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -244,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606119701752</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added buffer to placeholders, hopefully fixing the issue of missing placeholders">
+      <created>1606168893334</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606168893334</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,44 +286,45 @@
     <MESSAGE value="Fixed percentage placeholder" />
     <MESSAGE value="Updated placeholders to work with the new recoded framework" />
     <MESSAGE value="Fixed Progressbar placeholder, it now works well with scoreboards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Progressbar placeholder, it now works well with scoreboards" />
+    <MESSAGE value="Added buffer to placeholders, hopefully fixing the issue of missing placeholders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added buffer to placeholders, hopefully fixing the issue of missing placeholders" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1605590577786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1605590577786" />
-    <state x="456" y="88" key="CommitChangelistDialog2" timestamp="1606119700299">
+    <state x="456" y="88" key="CommitChangelistDialog2" timestamp="1606168892139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="456" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606119700299" />
-    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1606075062492">
+    <state x="456" y="88" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606168892139" />
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1606213696265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606075062492" />
-    <state width="938" height="4" key="GridCell.Tab.0.bottom" timestamp="1606080343636">
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606213696265" />
+    <state width="938" height="237" key="GridCell.Tab.0.bottom" timestamp="1606473985580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="4" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
-    <state width="938" height="4" key="GridCell.Tab.0.center" timestamp="1606080343636">
+    <state width="938" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606473985580" />
+    <state width="938" height="237" key="GridCell.Tab.0.center" timestamp="1606473985580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="4" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
-    <state width="938" height="4" key="GridCell.Tab.0.left" timestamp="1606080343636">
+    <state width="938" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606473985580" />
+    <state width="938" height="237" key="GridCell.Tab.0.left" timestamp="1606473985580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="4" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
-    <state width="938" height="4" key="GridCell.Tab.0.right" timestamp="1606080343636">
+    <state width="938" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606473985580" />
+    <state width="938" height="237" key="GridCell.Tab.0.right" timestamp="1606473985580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="4" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606080343636" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1606075064928">
+    <state width="938" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606473985580" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1606213697430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606075064928" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606119706663">
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606213697430" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606168895330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606119706663" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-5.1920.1040@0.0.1920.1040" timestamp="1606168895330" />
   </component>
 </project>

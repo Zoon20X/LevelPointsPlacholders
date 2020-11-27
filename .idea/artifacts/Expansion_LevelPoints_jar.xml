@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="LevelPointsPlacholders:jar">
+  <artifact type="jar" name="Expansion-LevelPoints:jar">
     <output-path>$PROJECT_DIR$/../../My Servers/VenturesCraft/plugins/PlaceholderAPI/expansions</output-path>
     <root id="archive" name="LevelPointsPlacholders.jar">
       <element id="module-output" name="LevelPointsPlacholders" />

@@ -133,52 +133,67 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
 //
 //        }
             if (identifier.equals("exp_amount")) {
-                double expamount = AsyncEvents.getPlayerContainer(player).getEXP();
-                return String.valueOf(expamount);
+                if(AsyncEvents.isPlayerInCache(player)) {
+                    double expamount = AsyncEvents.getPlayerContainer(player).getEXP();
+                    return String.valueOf(expamount);
+                }
+                return "Loading...";
             }
             if (identifier.equals("exp_required")) {
-                double needep = AsyncEvents.getPlayerContainer(player).getRequiredEXP();
-                return String.valueOf(needep);
+                if(AsyncEvents.isPlayerInCache(player)) {
+                    double needep = AsyncEvents.getPlayerContainer(player).getRequiredEXP();
+                    return String.valueOf(needep);
+                }
+                return "Loading...";
             }
             if (identifier.equals("progress_bar")) {
-
-                double required_progress = AsyncEvents.getPlayerContainer(player).getRequiredEXP();
-                double current_progress = AsyncEvents.getPlayerContainer(player).getEXP();
-                double progress_percentage = current_progress / required_progress;
-                StringBuilder sb = new StringBuilder();
-
-                int bar_length = 12;
-
-                String completed;
-                String needed;
-                boolean complete = false;
-                boolean need = false;
-                for (int i = 0; i < bar_length; i++) {
-                    if (i < bar_length * progress_percentage) {
-                        if(complete){
-                            completed = ChatColor.stripColor(FileCache.getConfig("langConfig").getString("ProgressBar.Complete"));
-                        }else {
-                            completed = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Complete"));
-                            complete = true;
-                        }
-                        sb.append(completed);
-                    } else {
-
-                        if(need) {
-                             needed = ChatColor.stripColor(API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Required")));
-                        }else{
-                            needed = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Required"));
-                            need = true;
-                        }
-                        sb.append(needed);
+                if(AsyncEvents.isPlayerInCache(player)) {
+                    double required_progress = AsyncEvents.getPlayerContainer(player).getRequiredEXP();
+                    double current_progress = AsyncEvents.getPlayerContainer(player).getEXP();
+                    double progress_percentage = current_progress / required_progress;
+                    StringBuilder sb = new StringBuilder();
+                    int bar_length;
+                    if(FileCache.containsFile("langConfig")) {
+                        bar_length = FileCache.getConfig("langConfig").getInt("ProgressBar.PlaceholderAPI.Size");
+                    }else{
+                         bar_length = 8;
                     }
+
+                    String completed;
+                    String needed;
+                    boolean complete = false;
+                    boolean need = false;
+                    for (int i = 0; i < bar_length; i++) {
+                        if (i < bar_length * progress_percentage) {
+                            if (complete) {
+                                completed = ChatColor.stripColor(FileCache.getConfig("langConfig").getString("ProgressBar.Complete"));
+                            } else {
+                                completed = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Complete"));
+                                complete = true;
+                            }
+                            sb.append(completed);
+                        } else {
+
+                            if (need) {
+                                needed = ChatColor.stripColor(API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Required")));
+                            } else {
+                                needed = API.format(FileCache.getConfig("langConfig").getString("ProgressBar.Required"));
+                                need = true;
+                            }
+                            sb.append(needed);
+                        }
+                    }
+
+                    return sb.toString();
                 }
-                return sb.toString();
+                return "Loading...";
             }
             if (identifier.equals("exp_progress")) {
-                float percentage = (float) AsyncEvents.getPlayerContainer(player).getEXP();
+                if(AsyncEvents.isPlayerInCache(player)) {
+                    float percentage = (float) AsyncEvents.getPlayerContainer(player).getEXP();
 
-                return String.valueOf(Math.round((percentage / AsyncEvents.getPlayerContainer(player).getRequiredEXP()) * 100));
+                    return String.valueOf(Math.round((percentage / AsyncEvents.getPlayerContainer(player).getRequiredEXP()) * 100));
+                }
             }
             if (identifier.equals("booster_active")) {
 
@@ -190,9 +205,13 @@ public class LevelPointsExpansion extends PlaceholderExpansion {
                 return "";
             }
             int prestigelevel = AsyncEvents.getPlayerContainer(player).getPrestige();
+
             if (!(prestigelevel == 0)) {
                 if (identifier.equals("prestige")) {
-                    return String.valueOf(prestigelevel);
+                    if(AsyncEvents.isPlayerInCache(player)) {
+                        return String.valueOf(prestigelevel);
+                    }
+                    return "Loading...";
                 }
                 if (player == null) {
                     return "";
